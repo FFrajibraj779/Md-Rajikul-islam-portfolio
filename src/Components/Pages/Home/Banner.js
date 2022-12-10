@@ -29,7 +29,9 @@ const Banner = () => {
               Quickly integrate into the team so I can provide value to the
               company and the customers. 
             </p>
-            <button className=" btn btn-outline bgColor ">Hire Me</button>
+          <a href="#contact">
+          <button className=" btn btn-outline bgColor ">Hire Me</button>
+          </a>
           </div>
         </div>
       </div>

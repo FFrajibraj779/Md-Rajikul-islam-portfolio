@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const Foonter = () => {
   return (
     <div>
-        <hr/>
+      <hr />
       <footer className="footer p-10  text-white">
         <div>
           <img src={logo} className="w-16 " alt="logo" />
