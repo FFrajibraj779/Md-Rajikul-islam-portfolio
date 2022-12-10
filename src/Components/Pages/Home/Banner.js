@@ -6,7 +6,7 @@ import "../../Styles/Style.css";
 const Banner = () => {
   return (
     <div>
-      <div className="hero bgColor  px-8">
+      <div className="hero bgColor  lg:px-14">
         <div className="hero-content  flex-col lg:flex-row-reverse p-0">
           <div className="lg:w-1/2  ">
             <img src={bannerimg} className="" alt="" />

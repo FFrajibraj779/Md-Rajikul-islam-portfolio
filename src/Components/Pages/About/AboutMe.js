@@ -2,12 +2,13 @@ import React from "react";
 import rajikul from "../../../images/rajikul.jpg";
 const AboutMe = () => {
   return (
-    <div className="lg:px-8 my-8">
+    <div className="lg:px-14 my-20" id="about">
       <h2 className="lg:text-5xl text-3xl
-        uppercase text-[#818AA9] font-bold text-center my-2 ">
+        uppercase text-[#818AA9] font-bold text-center my-10 ">
         About Me
+        <hr className="w-3/12 mx-auto mb-4"/>
       </h2>
-      <hr className="w-3/12 mx-auto mb-4"/>
+      
 
       <div className="hero ">
         <div className="hero-content flex-col lg:flex-row">
