@@ -1,46 +1,31 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link, NavLink } from "react-router-dom";
+import "../../Styles/Style.css";
 
 const Header = () => {
-    return (
-        <div>
-         <div className="navbar bg-base-100">
-  <div className="flex-1">
-    <Link className="btn btn-ghost normal-case text-xl">rajib</Link>
-  </div>
-
-  <div className="flex-none">
-    <ul>
-        <li>
-            <Link className='mr-2 lg:text-lg font-semibold  '>Home</Link>
-            <Link className='mr-2 lg:text-lg font-semibold '>Works</Link>
-            <Link className='mr-2 lg:text-lg font-semibold '>Contact Me</Link>
-        </li>
-    </ul>
-  
-    <div className="dropdown dropdown-end">
-      <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-        <div className="w-10 rounded-full">
-          <img src="https://placeimg.com/80/80/people" />
+  return (
+    <div>
+      <div className="navbar bgColor">
+        <div className="">
+        
         </div>
-      </label>
-      <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-        <li>
-          <a className="justify-between">
-            Profile
-            <span className="badge">New</span>
-          </a>
-        </li>
-        <li><a>Settings</a></li>
-        <li><a>Logout</a></li>
-      </ul>
+
+        <div className="flex-none mx-auto">
+          <ul>
+            <li>
+              <Link className="mr-2 lg:text-lg font-semibold text-[#CCD6F6] hover:text-white ">Home</Link>
+              <Link className="mr-2 lg:text-lg font-semibold text-[#CCD6F6] hover:text-white">Works</Link>
+              <Link className="mr-2 lg:text-lg font-semibold text-[#CCD6F6] hover:text-white">Contact Me</Link>
+              <a href='https://drive.google.com/file/d/1Gcpih9Wca0C5f7yD9pAKOCzYryCkEmpQ/view?usp=share_link' className="mr-2 lg:text-lg font-semibold text-[#CCD6F6] hover:text-white">Resume</a>
+            </li>
+          </ul>
+
+         
+        </div>
+      </div>
+      <hr/>
     </div>
-    
-  </div>
-
-</div>
-        </div>
-    );
+  );
 };
 
 export default Header;

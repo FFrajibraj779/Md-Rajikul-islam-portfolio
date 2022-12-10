@@ -1,27 +1,35 @@
 import React from "react";
+import Typewriter from "typewriter-effect";
 import bannerimg from "../../../images/rajikl.png";
 import "../../Styles/Style.css";
 
 const Banner = () => {
   return (
     <div>
-      <div className="hero bgColor py-8 px-4">
-        <div className="hero-content  flex-col lg:flex-row-reverse ">
-          <div className="lg:w-1/2 ">
-            <img src={bannerimg} className="max-w-sm rounded-lg " alt="" />
+      <div className="hero bgColor  px-8">
+        <div className="hero-content  flex-col lg:flex-row-reverse p-0">
+          <div className="lg:w-1/2  ">
+            <img src={bannerimg} className="" alt="" />
           </div>
-          <div className="lg:w-1/2 ">
-            <h1 className="lg:text-5xl font-bold">
-              Hi ! I AM RAJIKUL <br />
-              FRONTEND DEVELOPER
+          <div className="lg:w-1/2 p-4 ">
+            <h1 className=" text-3xl lg:text-5xl  font-bold">
+              <Typewriter
+                options={{
+                  strings: [` Hi ! I AM RAJIKUL <br />
+                  FRONTEND DEVELOPER`],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+             
             </h1>
             <p className="py-6 font-sans lg:text-lg">
               Dedicated And Efficient Frontend Developer Working With
               Javascript, Node Js, and React Js. I`m a fast learner and Can
               Quickly integrate into the team so I can provide value to the
-              company and the customers. et a id nisi.
+              company and the customers. 
             </p>
-            <button className="btn btn-primary">Hire Me</button>
+            <button className=" btn btn-outline bgColor ">Hire Me</button>
           </div>
         </div>
       </div>
