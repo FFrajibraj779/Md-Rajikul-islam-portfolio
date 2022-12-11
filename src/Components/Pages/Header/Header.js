@@ -8,7 +8,7 @@ const Header = () => {
     <>
       <li>
         <a
-          href="#home"
+          href="/"
           className="mr-2 lg:text-lg font-semibold text-[#CCD6F6] hover:text-white "
         >
           Home
@@ -99,7 +99,7 @@ const Header = () => {
         </div>
 
         <div className="navbar-end   ">
-        <Link>
+        <Link to='/'>
           <img src={logo} className='w-24' alt="logo"/>
           </Link>
         </div>
