@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import SingleCard from "../SingleCard]/SingleCard";
+import SingleCard from "../SingleCard/SingleCard";
 
 
 
@@ -25,7 +25,9 @@ const Projects = () => {
           <hr className="w-3/12  mx-auto mb-4" />
         </h2>
 
-        <div className="flex lg:flex-row  flex-col lg:gap-10 gap-4">
+        <div className="flex lg:flex-row  flex-col lg:gap-10 gap-4"
+         data-aos-duration="3000"
+        data-aos="flip-right">
 
       
           {

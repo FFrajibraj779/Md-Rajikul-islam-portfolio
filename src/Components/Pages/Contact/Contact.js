@@ -1,8 +1,9 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-
+import toast, { Toaster } from "react-hot-toast";
 const Contact = () => {
   const form = useRef();
+  console.log(form);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -17,6 +18,11 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          console.log(result);
+          toast.success("message sent!", {
+            position: "top-center",
+          });
+        
         },
         (error) => {
           console.log(error.text);
@@ -25,7 +31,14 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="lg:px-14 px-4 mb-10">
+    <div
+      id="contact"
+      className="lg:px-14 px-4 mb-10"
+      data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-delay="300"
+      data-aos-offset="0"
+    >
       <h2
         className="lg:text-5xl text-3xl
         uppercase text-[#818AA9] font-bold text-center my-14 "

@@ -1,5 +1,9 @@
 import React from "react";
 import rajikul from "../../../images/rajikul.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
+
 const AboutMe = () => {
   return (
     <div className="lg:px-14 my-20" id="about">
@@ -13,12 +17,25 @@ const AboutMe = () => {
 
       <div className="hero ">
         <div className="hero-content flex-col lg:flex-row">
-          <img
-            src={rajikul}
-            className="max-w-sm rounded-lg shadow-2xl"
-            alt=""
-          />
-          <div className="mt-4">
+          <div
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="3500"
+          >
+            <img
+              src={rajikul}
+              className="max-w-sm rounded-lg shadow-2xl"
+              alt=""
+            />
+          </div>
+          <div
+            className="mt-4"
+            data-aos="fade-right"
+
+            data-aos-offset="500"
+            data-aos-duration="3500"
+          >
             <h1 className="text-4xl font-bold text-[#]">RAJIKUL </h1>
             <h1 className="text-2xl font-bold text-[#]">Frontend Developer </h1>
             <p className="py-6 text-xl ">

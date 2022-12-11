@@ -10,7 +10,12 @@ const ProjectDetails = () => {
   const { title, liveSide, clientSide, serverSide, desc } = data;
 
   return (
-    <div className="lg:px-14 px-4">
+    <div
+      className="lg:px-14 px-4"
+      data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine"
+    >
       <h2
         className="lg:text-4xl text-3xl
         uppercase text-white font-bold my-14 "
@@ -34,16 +39,24 @@ const ProjectDetails = () => {
       </div>
       <div className="my-5">
         <a target="_blank" href={liveSide}>
-          <button className=" btn btn-outline bgColor mr-2 mb-4 ">preview</button>
+          <button className=" btn btn-outline bgColor mr-2 mb-4 ">
+            preview
+          </button>
         </a>
         <a target="_blank" href={clientSide}>
-          <button className=" btn btn-outline bgColor mr-2 mb-4 ">client side code </button>
+          <button className=" btn btn-outline bgColor mr-2 mb-4 ">
+            client side code{" "}
+          </button>
         </a>
-      {
-        serverSide  ?  <a target="_blank" href={serverSide}>
-        <button className=" btn btn-outline bgColor mr-2 mb-4 ">sever side code</button>
-      </a>: ''
-      }
+        {serverSide ? (
+          <a target="_blank" href={serverSide}>
+            <button className=" btn btn-outline bgColor mr-2 mb-4 ">
+              sever side code
+            </button>
+          </a>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );
