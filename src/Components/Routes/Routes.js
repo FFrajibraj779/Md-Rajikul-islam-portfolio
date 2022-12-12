@@ -7,26 +7,27 @@ import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Home from "../Pages/Home/Home";
 
 export const router = createBrowserRouter([
-    {
-        path:"/",
-        element:<Main></Main>,
-        errorElement:<ErrorPage></ErrorPage>,
-        children:[
-            {
-                path:"/",
-                element:<Home></Home>
-            },
-            {
-                path:"projectDetails/:id",
-                element:<ProjectDetails/>,
-                loader:({params}) =>fetch(`https://rajikul-portfolio-server.vercel.app/projectdata/${params.id}`)
-            },
-            {
-                path:"/blogs",
-                element:<Blogs></Blogs>
-            }
-               
-            
-        ]
-    }
-])
+  {
+    path: "/",
+    element: <Main></Main>,
+    errorElement: <ErrorPage></ErrorPage>,
+    children: [
+      {
+        path: "/",
+        element: <Home></Home>,
+      },
+      {
+        path: "projectDetails/:id",
+        element: <ProjectDetails />,
+        loader: ({ params }) =>
+          fetch(
+            `https://rajikul-portfolio-server.vercel.app/projectdata/${params.id}`
+          ),
+      },
+      {
+        path: "/blogs",
+        element: <Blogs></Blogs>,
+      },
+    ],
+  },
+]);

@@ -31,12 +31,12 @@ const Header = () => {
         >
           About Me
         </a>
-        <a
-          href="/blogs"
+        <Link
+          to="/blogs"
           className="mr-2 lg:text-lg font-semibold text-[#CCD6F6] hover:text-white"
         >
                       Blogs
-        </a>
+        </Link>
         <a
           target="_blank"
           download="https://drive.google.com/file/d/1Gcpih9Wca0C5f7yD9pAKOCzYryCkEmpQ/view?usp=share_link"

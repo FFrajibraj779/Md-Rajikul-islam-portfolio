@@ -18,3 +18,20 @@
     display: block;
     width: 100%;
   }
+
+ 
+  .text img{
+ 
+ 
+ /* animation: rotateText 10s ease-in  infinite; */
+  }
+
+  @keyframes rotateText {
+    
+    0%{
+      transform: rotate(180deg);
+    }
+    100%{
+      transform: rotate(0deg);
+    }
+  }
