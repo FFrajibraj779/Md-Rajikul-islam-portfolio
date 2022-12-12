@@ -7,7 +7,7 @@ import Slider from "../Slider/Slider";
 const ProjectDetails = () => {
   const data = useLoaderData();
   console.log(data);
-  const { title, liveSide, clientSide, serverSide, desc } = data;
+  const { title, liveSide, clientSide, serverSide, desc, technoloy } = data;
 
   return (
     <div
@@ -34,7 +34,8 @@ const ProjectDetails = () => {
           >
             Feature of My Project
           </h2>
-          <p className="lg:text-xl">{desc}</p>
+       <p className="lg:text-xl">{desc}</p>
+       <p className="lg:text-xl mt-4">Technology: {technoloy}</p>
         </div>
       </div>
       <div className="my-5">

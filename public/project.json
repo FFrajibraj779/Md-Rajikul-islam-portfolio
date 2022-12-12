@@ -2,6 +2,7 @@
     {
         "id":"1",
         "title":"master builder",
+        "technology":"react js , node js, mongodb, express js tailwind css firebase ",
          "liveSide": "https://master-builder-assignment.web.app/",
          "clientSide" :"https://github.com/FFrajibraj779/master-builder-cline-as11",
          "serverSide" : "https://github.com/FFrajibraj779/master-builder-server",
@@ -14,6 +15,7 @@
     {
         "id":"2",
         "title":"learning programming",
+        "technology":"react js , node js, mongodb, express js tailwind css firebase ",
          "liveSide":"https://assignment10-c02d5.web.app/",
          "clientSide":"https://github.com/FFrajibraj779/learning-programming",
          "serverSide":"https://github.com/FFrajibraj779/learning-programming-server",
@@ -26,6 +28,7 @@
     {
         "id":"3",
         "title":" programming context",
+        "technology":"react js , tailwind css  ",
         "liveSide":"https://charming-salamander-0ceee5.netlify.app/",
         "clientSide":"https://github.com/FFrajibraj779/programming-context-as9",
         "desc":"Simple quiz-related website If users click the right answer shows a popup correct answer or show the wrong answer Users also see the correct answer click on the icon",
